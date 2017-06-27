@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Landmarks</th>
+    <th>Titles</th>
+  </tr>
+  <tr>
+    <td><%= @figure.name %></td>
+    <td><%= Landmark.all.collect {|lm| lm.name }.join(", ") %></td>
+    <td><%= Title.all.collect {|t| t.name }.join(", ") %></td>
+  </tr>
+<table>
